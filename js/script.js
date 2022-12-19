@@ -4,13 +4,15 @@ alert('Buongiorno cliente')
 const numerochilometri = prompt('Quanti chilometri deve percorrere?');
 console.log(numerochilometri);
 console.log(typeof numerochilometri);
+
 // Chiedi l' età del passeggero
 const età = prompt('Quanti anni ha?');
 console.log(età);
 console.log(typeof età);
 // Calcolo prezzo totale in base ai chilometri (0.21 € al km)
 const prezzo = 0.21;
-let prezzofinale = prezzo * numerochilometri;
+let prezzofinale = prezzo * parseInt(numerochilometri);
+console.log(prezzofinale);
 // Se il cliente è minorenne va applicato uno sconto del 20%
 if(età >= 18){
     
